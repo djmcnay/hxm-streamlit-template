@@ -1,0 +1,20 @@
+/* Hacked Stylesheet
+
+Streamlit are d1cks about styling, but there are hacks to apply CSS.
+Gist is that we read a CSS file is as markdown and set unsafe_allow_html to True.
+This CSS sheet is just for custom bits and bobs I've found I need.
+
+References:
+https://discuss.streamlit.io/t/custom-fonts-on-streamlit/25984/3
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html, body, [class*="css"] {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, [class*="css"]{
+    font-family: Astoria, "Times New Roman";
+}
